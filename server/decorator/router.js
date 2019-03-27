@@ -9,6 +9,13 @@ export const symbolPrefix = Symbol('prefix')
 export const isArray = v => _.isArray(v) ? v : [v]
 export const normalizePath = path => path.startsWith('/') ? path : `/${path}`
 
+/**
+ * @description 通过es7装饰器来强化路由
+ * @author Leibo
+ * @date 2019-03-26
+ * @export
+ * @class Route
+ */
 export default class Route {
   constructor (app, apiPath) {
     this.app = app
